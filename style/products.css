@@ -1,0 +1,172 @@
+html{
+  zoom:75%;
+}
+
+@keyframes slideAndScale {
+            0% {
+                transform: translateX(100%) scale(0.2);
+            }
+  
+            100% {
+                transform: translateX(0%) scale(1);
+            }
+        }
+
+#popDetails{
+  position:fixed;
+  top:50%;
+  left:99%;
+  width:4vw;
+  height:4vw;
+  border:2px solid #a882f5;
+  border-radius:999px;
+  background-color:rgb(255, 207, 253);
+  font-size:2vw;
+}
+
+.animationPop{
+  animation:slideAndScale 2s;
+}
+
+/* Fridge Page*/
+.vegcontainerProduct {
+  background-image: url("../image/aboutheader.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  justify-content:center;
+   text-align: center;
+}
+
+.cfcontainerProduct {
+  background-image: url("../image/cookedfoodbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  justify-content:center;
+   text-align: center;
+}
+
+.rmcontainerProduct {
+  background-image: url("../image/rawmeatbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  justify-content:center;
+  text-align: center;
+}
+
+.bevcontainerProduct {
+  background-image: url("../image/coffeebackground.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  justify-content:center;
+  text-align: center;
+}
+
+.containerProductTextLight {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 6vw;
+  color: black;
+  text-shadow: 3px 3px 15px white;
+}
+
+.containerProductTextDark {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 6vw;
+  color: white;
+  text-shadow: 3px 3px 15px black;
+}
+
+#bevInfo {
+  visibility:hidden;
+  display:flex;
+  position:fixed;
+  flex-direction:column;
+  background-color:rgb(230, 211, 235);
+  box-shadow: 0 0 9px rgb(162, 85, 212);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
+  border-radius:20px;
+  width: 25vw;
+  padding: 2vw;
+  top: 20vw;
+  left:75%;
+}
+
+.bevdetails{
+  text-decoration:underline;
+  font-weight:bold;
+}
+
+#cookedInfo {
+  visibility:hidden;
+  display:flex;
+  position:fixed;
+  flex-direction:column;
+  background-color:rgb(230, 211, 235);
+  box-shadow: 0 0 9px rgb(162, 85, 212);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
+  border-radius:20px;
+  width: 25vw;
+  padding: 2vw;
+  top: 20vw;
+  left:75%;
+}
+.cookeddetails{
+  text-decoration:underline;
+  font-weight:bold;
+}
+
+#vegetableInfo {
+  visibility:hidden;
+  display:flex;
+  position:fixed;
+  flex-direction:column;
+  background-color:rgb(230, 211, 235);
+  box-shadow: 0 0 9px rgb(162, 85, 212);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
+  border-radius:20px;
+  width: 25vw;
+  padding: 2vw;
+  top: 20vw;
+  left:75%;
+}
+
+.vegdetails{
+  text-decoration:underline;
+  font-weight:bold;
+}
+
+
+#meatInfo {
+  visibility:hidden;
+  display:flex;
+  position:fixed;
+  flex-direction:column;
+  background-color:rgb(230, 211, 235);
+  box-shadow: 0 0 9px rgb(162, 85, 212);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
+  border-radius:20px;
+  width: 25vw;
+  padding: 2vw;
+  top: 20vw;
+  left:75%;
+}
+
+.meatdetails{
+  text-decoration:underline;
+  font-weight:bold;
+}

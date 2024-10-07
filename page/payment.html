@@ -1,0 +1,163 @@
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+
+    <title>ClickFood | Payment</title>
+    <link rel="stylesheet" href="../style/navbar.css" />
+    <link rel="stylesheet" href="../style/payment.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <link rel="icon" href="../image/clickfoodlogo_again.png" sizes="16x16" />
+    <script src="../script/dark-brightmode.js"></script>
+    <script src="../script/usernav.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li><a href="products/products.html">Product</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <div class="specialhoverdiv">
+          <li><a href="cart.html" class="specialhover">🛒</a></li>
+          <li>
+            <button class="specialhover navactive" onclick="userprofile()">
+              👤
+            </button>
+          </li>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="containerPayment">
+      <form>
+        <div class="row">
+          <div class="col">
+            <h3 class="title">Delivery Address</h3>
+
+            <div class="inputBox">
+              <span>Full name :</span>
+              <input type="text " placeholder="Christina Chong" />
+            </div>
+
+            <div class="inputBox">
+              <span>Email :</span>
+              <input type="text " placeholder="example@gmail.com" />
+            </div>
+
+            <div class="inputBox">
+              <span>Address :</span>
+              <input type="text " placeholder="Street - Unit No. - Floor" />
+            </div>
+
+            <div class="inputBox">
+              <span>City :</span>
+              <input type="text " placeholder="Ipoh" />
+            </div>
+
+            <div class="inputBox">
+              <span>State :</span>
+              <input type="text " placeholder="Perak" />
+            </div>
+
+            <div class="inputBox">
+              <span>Zip code :</span>
+              <input type="text " placeholder="31500" />
+            </div>
+          </div>
+          <br />
+
+          <div class="col">
+            <h3 class="title">Payment</h3>
+
+            <div class="inputBox">
+              <span>Cards accepted :</span>
+              <img
+                src="../../image/payOptions.png"
+                alt="Payment methods"
+                style="height: 55px"
+              />
+            </div>
+
+            <div class="inputBox">
+              <span>Card holder name :</span>
+              <input type="text " placeholder="Christina Chong" />
+            </div>
+
+            <div class="inputBox">
+              <span>Credit card number :</span>
+              <input type="text " placeholder="XXXX-XXXX-XXXX-XXXX" />
+            </div>
+            <div class="inputBox">
+              <span>CVV :</span>
+              <input type="text " placeholder="XXXX" />
+            </div>
+            <div class="inputBox">
+              <span>Total : </span>
+              <p id="totalPrice"></p>
+            </div>
+            <div class="inputBox1">
+              <a href="receipt.html" id="receiptButton">Show Receipt</a>
+
+              <a href="delivery.html" id="stats">Delivery Status</a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="../script/payment.js"></script>
+    <!-- ------------------------Footer--------------------------- -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <p>More Info</p>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="products/products.html">Products</a></li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <p>Get Help</p>
+            <ul>
+              <li><a href="mailto:raccatar@gmail.com">Email</a></li>
+              <li><a href="tel:+60164230745">Telephone</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <p>Follow Us</p>
+            <ul>
+              <li>
+                <a
+                  href="https://www.instagram.com/racca_tar/"
+                  target="_blank"
+                  class="fa fa-instagram"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://m.facebook.com/profile.php/?id=61551579621493&name=xhp_nt__fb__action__open_user"
+                  class="fa fa-facebook"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/Racca_tar"
+                  class="fa fa-twitter"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

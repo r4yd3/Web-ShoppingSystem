@@ -1,0 +1,119 @@
+
+
+<html>
+  <head>
+        <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title>ClickFood | Cooked</title>
+    <link rel="stylesheet" href="../../style/navbar.css" />
+    <link rel="stylesheet" href="../../style/main.css" />
+    <link rel="stylesheet" href="../../style/products.css"/>
+    <link rel="stylesheet" href="../../style/footer.css"/>
+    <link rel="icon" href="../../image/clickfoodlogo_again.png" sizes="16x16" />
+  
+    <script src="../../script/dark-brightmode.js"></script>
+    <script src="../../script/usernav.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!--Awesome font-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- not sure if teacher will allow that because its not our css-->
+  </head>
+  
+  <body>
+     <nav>
+      <ul>
+        <li>
+          <a href="../../index.html" class="home">Home</a>
+        </li>
+        <li><a href="products.html" class="navactive">Products</a></li>
+        <li><a href="../about.html">About Us</a></li>
+        <div class="specialhoverdiv">
+          <li><a href="../cart.html" class="specialhover">🛒</a></li>
+           <li><button class="specialhover navactive" onclick="userprofile()">👤</button></li>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="cfcontainerProduct">
+      <h1 class="containerProductTextDark">
+        Cooked Food
+      </h1>
+    </div>
+    
+    <div style="display:flex;">
+      <img src="../../image/cookedBasket.png" usemap="#cooked-map">
+      <map name="cooked-map">
+          <area target="" id="chickenpie" alt="ChickenPie" title="ChickenPie" href="" coords="561,724,599,619,737,597,815,608,882,638,906,675,907,722,877,743,799,764,694,770,616,759" shape="poly">
+          <area target="" id="quesadillas" alt="Quesadillas" title="Quesadillas" href="" coords="1114,597,936,581,902,660,910,726,940,786,1021,829,1099,846,1176,835,1258,792,1306,765,1347,730,1176,656,1145,632" shape="poly">
+          <area target="" id="grilledchicken" alt="GrilledChicken" title="GrilledChicken" href="" coords="1297,971,161" shape="circle">
+          <area target="" id="spaghetti" alt="Spaghetti" title="Spaghetti" href="" coords="745,858,678,791,563,742,423,749,323,804,260,874,261,972,319,1048,428,1095,557,1101,670,1060,652,975,686,910" shape="poly">
+          <area target="" id="sushi" alt="Sushi" title="Sushi" href="" coords="867,817,768,850,725,882,674,945,658,988,674,1065,697,1098,779,1152,854,1174,962,1168,1027,1152,1107,1091,1139,1044,1137,994,1130,953,1118,905,1050,851,958,821" shape="poly">
+      </map>
+    </div>
+    
+    <div id="cookedInfo">
+        <div>
+          <p class="cookeddetails">Item Name</p>
+          <p id="item" ></p>
+        </div>
+        <div>
+           <p class="cookeddetails">Price</p>
+           <p id="price" ></p>
+        </div>
+        <div>
+          <p class="cookeddetails">Origin</p>
+          <p id="origin" ></p>
+        </div>
+      
+      </div>
+     <button id="popDetails" onclick="popcook()">
+         +
+      </button>
+    <script src="../../script/product.js"></script>
+  
+  </body>
+  <!--Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <p>More Info</p>
+            <ul>
+              <li><a href="../about.html">About Us</a></li>
+              <li><a href="../cart.html">Cart</a></li>
+                <li><a href="products.html">Products</a></li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <p>Get Help</p>
+            <ul>
+              <li><a href="mailto:raccatar@gmail.com">Email</a></li>
+              <li><a href="tel:+60164230745">Telephone</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <p>Follow Us</p>
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/racca_tar/" target="_blank" class="fa fa-instagram"></a>
+              </li>
+              <li>
+                <a href="https://m.facebook.com/profile.php/?id=61551579621493&name=xhp_nt__fb__action__open_user" class="fa fa-facebook" target="_blank"></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/Racca_tar" class="fa fa-twitter"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </footer>
+</html>

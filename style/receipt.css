@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Monserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #808080;
+}
+
+.wrapper {
+  width: 700px;
+  height: 620px;
+  background: #ffffff;
+  position: relative;
+  padding: 30px 40px;
+}
+
+.border-design {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.c1 {
+  background: black;
+}
+
+.border-design .c1 {
+  width: 120px;
+  height: 10px;
+}
+
+.border-design.top {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.border-design.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  flex-direction: row-reverse;
+}
+
+.receipt-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.logo span {
+  font-weight: 400;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.rcp-number {
+  padding: 10px 45px 0 0;
+}
+
+.rcp-date {
+  padding: 10px 0 1 45;
+}
+
+.rcp-number h3,
+.rcp-date h3 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.rcp-number h4,
+.rcp-date h4 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 2px black solid;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.table.headings {
+  background-color: #808080;
+}
+
+.total {
+  border: 0px;
+}
+
+.totalamount {
+  background-color: #808080;
+}

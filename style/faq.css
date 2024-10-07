@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+header {
+  margin-bottom: 7vw;
+}
+
+.faqcontainer {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  justify-content: space-evenly;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: justify;
+  height: 40vw;
+}
+
+.content {
+  margin-left: 3.6vw;
+}
+
+.leftfaq {
+  border-radius: 20px;
+  width: 50vw;
+  justify-content: space-evenly;
+  margin-right: 50px;
+  text-align: justify;
+}
+
+.leftfaq .faqQ input {
+  appearance: none;
+}
+
+.leftfaq .faqQ label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.leftfaq .faqQ label::after {
+  content: "+";
+  position: absolute;
+  left: 45%;
+  font-size: 2em;
+  color: gray;
+  transition: trasnform 1s;
+}
+
+.leftfaq .faqQ:hover label::after {
+  color: #333;
+}
+
+.leftfaq .faqQ input:checked ~ label::after {
+  transform: rotate(135deg);
+}
+
+.leftfaq .faqQ label h2 {
+  width: 40px;
+  height: 40px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.25em;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.leftfaq .faqQ .content {
+  max-height: 0;
+  transition: 1s;
+  overflow: hidden;
+}
+
+.leftfaq .faqQ input:checked ~ .content {
+  max-height: 100vh;
+  animation: slidein 2s;
+}
+
+.leftfaq .faqQ .content p {
+  position: relative;
+  padding: 10px 0;
+  color: #333;
+  z-index: 10;
+}
+
+.rightfaq {
+  border-radius: 20px;
+  width: 50vw;
+  justify-content: space-evenly;
+  margin-left: 50px;
+  text-align: justify;
+}
+
+.rightfaq .faqQ input {
+  appearance: none;
+}
+
+.rightfaq .faqQ label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.rightfaq .faqQ label::after {
+  content: "+";
+  position: absolute;
+  right: 11%;
+  font-size: 2em;
+  color: gray;
+  transition: trasnform 1s;
+}
+
+.rightfaq .faqQ:hover label::after {
+  color: #333;
+}
+
+.rightfaq .faqQ input:checked ~ label::after {
+  transform: rotate(135deg);
+}
+
+.rightfaq .faqQ label h2 {
+  width: 40px;
+  height: 40px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.25em;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.rightfaq .faqQ .content {
+  max-height: 0;
+  transition: 0.8s;
+  overflow: hidden;
+}
+
+.rightfaq .faqQ input:checked ~ .content {
+  max-height: 100vh;
+  animation: slidein 2s;
+}
+
+.rightfaq .faqQ .content p {
+  position: relative;
+  padding: 10px 0;
+  color: #333;
+  z-index: 10;
+}
+.faqQ {
+  padding-top: 10%;
+}
+
+.faqtitle {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  font-size: 100px;
+  text-shadow: 2px 2px 5px gray;
+}
+
+li {
+  list-style-position: inside;
+}

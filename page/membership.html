@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title>ClickFood | Membership</title>
+    <link rel="stylesheet" href="../style/navbar.css" />
+    <link rel="stylesheet" href="../style/membership.css" />
+    <link rel="icon" href="../image/clickfoodlogo_again.png" sizes="16x16" />
+
+    <script src="../script/dark-brightmode.js"></script>
+    <script src="../script/usernav.js"></script>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="../index.html" class="home">Home</a>
+        </li>
+        <li><a href="products/products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+
+        <div class="specialhoverdiv">
+          <li><a href="cart.html" class="specialhover">🛒</a></li>
+          <li>
+            <button class="specialhover navactive" onclick="userprofile()">
+              👤
+            </button>
+          </li>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="logincontainer">
+      <div class="loginbox">
+        <form>
+          <h1 class="loginh1">Login</h1>
+          <div class="inputbox">
+            <input type="text" placeholder="Username" required id="name" />
+          </div>
+          <div class="inputbox">
+            <input type="password" placeholder="Password" required id="pass" />
+          </div>
+          <!--button login-->
+          <button type="button" class="loginbutton" id="loginButton">
+            Login
+          </button>
+          <div>
+            <p>First time user? (<a href="register.html">Sign Up</a>)</p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../script/membership.js"></script>
+  </body>
+</html>

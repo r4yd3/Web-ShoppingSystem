@@ -1,0 +1,78 @@
+.shoppingcart {
+  color: rgb(147 87 190);
+  margin-left: 5vw;
+  margin-top: 5vw;
+  margin-bottom: 2vw;
+  font-size: 1.5vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cartdiv {
+    margin: 25px;
+    display: flex;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+th {
+    text-align: left;
+    font-size: 2vw;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+td {
+ padding-left: 50px;
+    padding-top: 50px;
+  text-align: left;
+ 
+    font-size: 1.5vw;
+
+}
+
+.carttdinput input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+img {
+    float: left;
+}
+.cartButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cartButton button {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  
+  width: 30px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: gray;
+}
+
+#payButton{
+    color: white;
+    font-size: 20px;
+    text-decoration:none;
+    text-align: center;
+    text-shadow: 2px -2px 4px rgb(77, 0, 153);
+    font-weight: bold;
+    padding:10px;
+    margin: 4vw;
+    margin-bottom: 8vw;
+    float:right;
+    border: 2px rgb(166, 77, 255);
+    background: rgb(147 87 190);
+    border-style: outset;
+    border-radius: 40px;
+    width: 20%;
+    height:6%;
+}

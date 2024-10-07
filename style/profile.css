@@ -1,0 +1,262 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes opa {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes dropdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+#profilepic {
+  position: relative;
+  background-color: rgb(192, 192, 192);
+  padding-bottom: 3em;
+  padding-top: 3vw;
+}
+
+#profilepic h1 {
+  animation: dropdown 1s;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4em;
+  color: white;
+  text-shadow: 3px 2px 10px rgb(0, 0, 0);
+  text-align: right;
+  margin-right: 40vw;
+}
+
+#profilepic img {
+  justify-content: center;
+  position: absolute;
+  object-fit: cover;
+  top: 5.2vw;
+  left: 8vw;
+  width: 12vw;
+  height: 12vw;
+  border-radius: 999px;
+  border: 2px solid black;
+}
+
+#profilepic input {
+  display: none;
+}
+
+.profilelabel {
+  display: hidden;
+  position: absolute;
+  object-fit: cover;
+  top: 5.2vw;
+  left: 8vw;
+  width: 12vw;
+  height: 12vw;
+  border-radius: 999px;
+  border: 2px solid black;
+  z-index: 1;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px black;
+  font-size: 0px;
+}
+
+.profilelabel:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 9;
+  font-size: 1vw;
+}
+
+.profilelabel span {
+  vertical-align: center;
+  position: absolute;
+  margin-left: 2.6vw;
+  margin-top: 5.2vw;
+}
+
+.userinfo {
+  height: 25vw;
+  padding-left: 22vw;
+  background-color: rgb(228, 228, 228);
+}
+
+.userinfo p {
+  animation: opa 1s;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vw;
+  font-weight: 600;
+  padding-top: 1.5vw;
+  text-shadow: 0.1px 0.1px 80px black;
+  color: rgb(58, 59, 59);
+}
+
+.userinfo label,
+.contactinfo label {
+  padding-left: 0.7vw;
+}
+
+.userinfo input {
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 20vw;
+  height: 3vw;
+  padding-left: 12px;
+}
+
+.userinfo .input,
+.contactinfo .input {
+  margin-top: 2vw;
+}
+
+.userinfo input:hover {
+  box-shadow: 2px 2px 8px grey;
+}
+
+.contactinfo {
+  height: 20vw;
+  padding-left: 22vw;
+  background-color: rgb(237, 237, 237);
+}
+
+.contactinfo input {
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 20vw;
+  height: 3vw;
+  padding-left: 12px;
+}
+
+.contactinfo p {
+  animation: opa 1s;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vw;
+  font-weight: 600;
+  padding-top: 1.5vw;
+  text-shadow: 0.1px 0.1px 80px black;
+  color: rgb(58, 59, 59);
+}
+
+
+
+.contactinfo input:hover {
+  box-shadow: 2px 2px 8px grey;
+}
+
+.contactinfo .input #adress {
+  width: 60vw;
+}
+
+.submit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: auto;
+  background-color: rgb(74, 74, 74);
+}
+
+.submit #save {
+  vertical-align: center;
+  border: 2px solid black;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 50px;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  width: 40vw;
+  height: 3vw;
+}
+
+.submit #save:hover {
+  color: white;
+  background-color: rgb(148, 148, 148);
+  box-shadow: 2px 2px 5px rgb(73, 73, 73);
+}
+
+.submit #logout {
+  vertical-align: center;
+  border: 2px solid black;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 50px;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  width: 40vw;
+  height: 3vw;
+}
+
+.submit #logout:hover {
+  color: white;
+  background-color: rgb(148, 148, 148);
+  box-shadow: 2px 2px 5px rgb(73, 73, 73);
+}
+
+/*Pop up*/
+.popup {
+  visibility: hidden;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 20vw;
+  width: 50%;
+  background-color: rgb(184, 184, 184);
+  border: 2px solid black;
+  border-radius: 20px;
+  top: 40%;
+  left: 25%;
+  right: auto;
+  z-index: 2;
+}
+
+.popup .row {
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.popup h1 {
+  margin-top: 5vw;
+  text-align: center;
+}
+
+.popup button {
+  justify-content: center;
+  border: 2px solid black;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 50px;
+  margin-top: 3vw;
+  margin-bottom: 2vw;
+  margin-left: 6vw;
+  width: 15vw;
+  height: 2.2vw;
+}
+
+.popup .yes:hover {
+  background-color: rgb(68, 210, 68);
+  color: rgb(0, 0, 0);
+  transform: scale(1.2);
+}
+
+.popup .no:hover {
+  background-color: rgb(216, 114, 80);
+  color: rgb(0, 0, 0);
+  transform: scale(1.2);
+}

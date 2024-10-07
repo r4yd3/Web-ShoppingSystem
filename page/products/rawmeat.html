@@ -1,0 +1,173 @@
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title>ClickFood | Raw Meat</title>
+    <link rel="stylesheet" href="../../style/navbar.css" />
+    <link rel="stylesheet" href="../../style/main.css" />
+    <link rel="stylesheet" href="../../style/products.css" />
+    <link rel="stylesheet" href="../../style/footer.css"/>
+    <link rel="icon" href="../../image/clickfoodlogo_again.png" sizes="16x16" />
+  
+    <script src="../../script/dark-brightmode.js"></script>
+    <script src="../../script/usernav.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!--Awesome font-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- not sure if teacher will allow that because its not our css-->
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="../../index.html" class="home">Home</a>
+        </li>
+        <li><a href="products.html" class="navactive">Products</a></li>
+        <li><a href="../about.html">About Us</a></li>
+
+        <div class="specialhoverdiv">
+          <li><a href="../cart.html" class="specialhover">🛒</a></li>
+          <li>
+            <button class="specialhover navactive" onclick="userprofile()">
+              👤
+            </button>
+          </li>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="rmcontainerProduct">
+      <h1 class="containerProductTextLight">Raw Meats</h1>
+    </div>
+    <div style="display:flex; margin:6vw;">
+      <img
+        src="../../image/rawmeatFridge.png"
+        alt="MeatMap"
+        usemap="#meatmap"
+      />
+      <map name="#meatmap">
+        <area 
+                target="" 
+                alt="Drumstick" 
+                title="Drumstick" 
+                id="drumstick" 
+                href="" 
+                coords="415,369,444,326,482,350,510,339,537,316,630,274,666,315,665,364,676,410,646,424,603,451,546,468,486,476,420,405" 
+                shape="poly"
+          />
+          <area 
+                target="" 
+                alt="Steak" 
+                title="Steak" 
+                id="steak" 
+                href="" 
+                coords="668,414,687,353,799,323,920,350,960,380,946,411,886,421,830,433,740,457" 
+                shape="poly"
+          />
+          <area 
+                target="" 
+                alt="Prawn" 
+                title="Prawn" 
+                id="prawn" 
+                href="" 
+                coords="900,277,1065,228,1144,318,1103,362,1015,395,955,403" 
+                shape="poly"
+          />
+          <area 
+                target="" 
+                alt="ChickenWing" 
+                title="ChickenWing" 
+                id="chickenwing" 
+                href="" 
+                coords="455,581,498,499,554,469,660,417,720,446,766,484,747,551,703,602,532,626" 
+                shape="poly"
+          />
+          <area 
+                target="" 
+                alt="Bacon" 
+                title="Bacon" 
+                id="bacon" 
+                href="" 
+                coords="747,454,965,397,1050,449,1056,507,979,553,840,583,761,536" 
+                shape="poly"
+          />
+          <area 
+                target="" 
+                alt="Salmon" 
+                title="Salmon" 
+                id="salmon" 
+                href="" 
+                coords="1023,389,1141,337,1282,335,1379,427,1391,482,1099,540" 
+                shape="poly"
+        />
+        </map>
+    </div>
+      <div id="meatInfo">
+       <div>
+          <p class="meatdetails">Item Name</p>
+          <p id="item" ></p>
+        </div>
+        <div>
+           <p class="meatdetails">Price</p>
+           <p id="price" ></p>
+        </div>
+        <div>
+          <p class="meatdetails">Origin</p>
+          <p id="origin" ></p>
+        </div>
+      </div>
+       <button id="popDetails" onclick="popmeat()">
+         +
+      </button>
+    
+    
+      
+    
+    <script src="../../script/product.js"></script>
+  </body>
+  <!--Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <p>More Info</p>
+            <ul>
+              <li><a href="../about.html">About Us</a></li>
+              <li><a href="../cart.html">Cart</a></li>
+                <li><a href="products.html">Products</a></li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <p>Get Help</p>
+            <ul>
+              <li><a href="mailto:raccatar@gmail.com">Email</a></li>
+              <li><a href="tel:+60164230745">Telephone</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <p>Follow Us</p>
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/racca_tar/" target="_blank" class="fa fa-instagram"></a>
+              </li>
+              <li>
+                <a href="https://m.facebook.com/profile.php/?id=61551579621493&name=xhp_nt__fb__action__open_user" class="fa fa-facebook" target="_blank"></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/Racca_tar" class="fa fa-twitter"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </footer>
+</html>

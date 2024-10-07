@@ -1,0 +1,243 @@
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title>ClickFood | Vegetable and Fruits</title>
+    <link rel="stylesheet" href="../../style/navbar.css" />
+    <link rel="stylesheet" href="../../style/main.css" />
+    <link rel="stylesheet" href="../../style/products.css" />
+    <link rel="stylesheet" href="../../style/footer.css"/>
+    <link rel="icon" href="../../image/clickfoodlogo_again.png" sizes="16x16" />
+    <script src="../../script/main.js"></script>
+    <script src="../../script/dark-brightmode.js"></script>
+    <script src="../../script/usernav.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!--Awesome font-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- not sure if teacher will allow that because its not our css-->
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="../../index.html" class="home">Home</a>
+        </li>
+        <li><a href="products.html" class="navactive">Products</a></li>
+        <li><a href="../about.html">About Us</a></li>
+        <div class="specialhoverdiv">
+          <li><a href="../cart.html" class="specialhover">🛒</a></li>
+          <li>
+            <button class="specialhover navactive" onclick="userprofile()">
+              👤
+            </button>
+          </li>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="vegcontainerProduct">
+      <h1 class="containerProductTextLight">
+        Vegetables and Fruits
+      </h1>
+    </div>
+
+    <div style="display:flex; margin:6vw;">
+      <img
+        src="../../image/vegetableFridge.png"
+        alt="vegFridge"
+        usemap="#veg-map"
+      />
+      <map name="veg-map">
+        <area
+          target=""
+          alt="Apple"
+          title="Apple"
+          id="apple"
+          href=""
+          coords="355,140,765,444"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Orange"
+          title="Orange"
+          id="orange"
+          href=""
+          coords="766,183,1107,459"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Avocado"
+          title="Avocado"
+          id="avocado"
+          href=""
+          coords="351,462,625,757"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Lemon"
+          title="Lemon"
+          id="lemon"
+          href=""
+          coords="625,464,903,786"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Grape"
+          title="Grape"
+          id="grape"
+          href=""
+          coords="903,467,1132,778"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Banana"
+          title="Banana"
+          id="banana"
+          href=""
+          coords="350,765,672,1028"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Mangosteen"
+          title="Mangosteen"
+          id="mangosteen"
+          href=""
+          coords="673,789,1129,1035"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Brocolli"
+          title="Brocolli"
+          id="brocolli"
+          href=""
+          coords="349,1053,694,1345"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Carrot"
+          title="Carrot"
+          id="carrot"
+          href=""
+          coords="888,1345,694,1050"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Dragonfruit"
+          title="Dragonfruit"
+          id="dragonfruit"
+          href=""
+          coords="887,1049,1128,1339"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Tomato"
+          title="Tomato"
+          id="tomato"
+          href=""
+          coords="353,1367,694,1609"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Cucumber"
+          title="Cucumber"
+          id="cucumber"
+          href=""
+          coords="696,1368,1101,1592"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Cabbage"
+          title="Cabbage"
+          id="cabbage"
+          href=""
+          coords="352,1623,813,1958"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Ladyfinger"
+          title="Ladyfinger"
+          id="ladyfinger"
+          href=""
+          coords="811,1619,1096,1931"
+          shape="rect"
+        />
+      </map>
+      <div id="vegetableInfo">
+         <div>
+          <p class="vegdetails">Item Name</p>
+          <p id="item" ></p>
+        </div>
+        <div>
+           <p class="vegdetails">Price</p>
+           <p id="price" ></p>
+        </div>
+        <div>
+          <p class="vegdetails">Origin</p>
+          <p id="origin" ></p>
+        </div>
+      </div>
+       <button id="popDetails" onclick="popveg()">
+         +
+      </button>
+    </div>
+    <script src="../../script/product.js"></script>
+  </body>
+  <!--Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <p>More Info</p>
+            <ul>
+              <li><a href="../about.html">About Us</a></li>
+              <li><a href="../cart.html">Cart</a></li>
+               <li><a href="products.html">Products</a></li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <p>Get Help</p>
+            <ul>
+              <li><a href="mailto:raccatar@gmail.com">Email</a></li>
+              <li><a href="tel:+60164230745">Telephone</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <p>Follow Us</p>
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/racca_tar/" target="_blank" class="fa fa-instagram"></a>
+              </li>
+              <li>
+                <a href="https://m.facebook.com/profile.php/?id=61551579621493&name=xhp_nt__fb__action__open_user" class="fa fa-facebook" target="_blank"></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/Racca_tar" class="fa fa-twitter"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </footer>
+</html>

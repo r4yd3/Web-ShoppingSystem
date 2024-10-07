@@ -1,0 +1,245 @@
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title>ClickFood | Beverages</title>
+    <link rel="stylesheet" href="../../style/navbar.css" />
+    <link rel="stylesheet" href="../../style/main.css" />
+    <link rel="stylesheet" href="../../style/products.css" />
+    <link rel="stylesheet" href="../../style/footer.css"/>
+    <link rel="icon" href="../../image/clickfoodlogo_again.png" sizes="16x16" />
+
+    <script src="../../script/dark-brightmode.js"></script>
+    <script src="../../script/usernav.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!--Awesome font-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- not sure if teacher will allow that because its not our css-->
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="../../index.html" class="home">Home</a>
+        </li>
+        <li><a href="products.html" class="navactive">Products</a></li>
+        <li><a href="../about.html">About Us</a></li>
+        <div class="specialhoverdiv">
+          <li><a href="../cart.html" class="specialhover">🛒</a></li>
+          <li>
+            <button class="specialhover navactive" onclick="userprofile()">
+              👤
+            </button>
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <div class="bevcontainerProduct">
+      <h1 class="containerProductTextDark">Beverages</h1>
+    </div>
+    <div style="display:flex; margin:6vw;">
+      <img src="../../image/beverageFridge.png" usemap="#bev-map" />
+      <map name="bev-map">
+        <area
+          target=""
+          alt="Milo"
+          title="Milo"
+          id="milo"
+          href=""
+          coords="187,237,427,541"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="100 Plus"
+          title="100 Plus"
+          id="hplus"
+          href=""
+          coords="427,222,797,536"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Coke"
+          title="Coke"
+          id="coke"
+          href=""
+          coords="795,206,1163,512"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Pocari Sweat"
+          title="Pocari Sweat"
+          id="pocari"
+          href=""
+          coords="158,639,500,873"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Old Town White Coffee"
+          title="Old Town White Coffee"
+          id="oldtown"
+          href=""
+          coords="500,562,828,873"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Monster"
+          title="Monster"
+          id="monster"
+          href=""
+          coords="830,561,1146,864"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Anmuxi"
+          title="Anmuxi"
+          id="anmuxi"
+          href=""
+          coords="173,905,538,1206"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Chapai"
+          title="Chapai"
+          id="chapai"
+          href=""
+          coords="538,908,835,1201"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Heaven and Earth"
+          title="Heaven and Earth"
+          id="heavenearth"
+          href=""
+          coords="835,909,1157,1195"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Tinge"
+          title="Tinge"
+          id="tinge"
+          href=""
+          coords="207,1229,491,1531"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Pepsi"
+          title="Pepsi"
+          id="pepsi"
+          href=""
+          coords="493,1235,821,1539"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Minute Maid"
+          title="Minute Maid"
+          id="minutemaid"
+          href=""
+          coords="822,1233,1153,1546"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Nescafe"
+          title="Nescafe"
+          id="nescafe"
+          href=""
+          coords="164,1552,503,2017"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Bleu"
+          title="Bleu"
+          id="bleu"
+          href=""
+          coords="503,1550,811,2039"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Evian"
+          title="Evian"
+          id="evian"
+          href=""
+          coords="811,1571,1156,2063"
+          shape="rect"
+        />
+      </map>
+      <div id="bevInfo">
+        <div>
+          <p class="bevdetails">Item Name</p>
+          <p id="item" ></p>
+        </div>
+        <div>
+           <p class="bevdetails">Price</p>
+           <p id="price" ></p>
+        </div>
+        <div>
+          <p class="bevdetails">Origin</p>
+          <p id="origin" ></p>
+        </div>
+      </div>
+      <button id="popDetails" onclick="popbev()">
+         +
+      </button>
+    </div>
+    <script src="../../script/product.js"></script>
+  </body>
+  
+  <!--Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <p>More Info</p>
+            <ul>
+              <li><a href="../about.html">About Us</a></li>
+              <li><a href="../cart.html">Cart</a></li>
+                <li><a href="products.html">Products</a></li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <p>Get Help</p>
+            <ul>
+              <li><a href="mailto:raccatar@gmail.com">Email</a></li>
+              <li><a href="tel:+60164230745">Telephone</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <p>Follow Us</p>
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/racca_tar/" target="_blank" class="fa fa-instagram"></a>
+              </li>
+              <li>
+                <a href="https://m.facebook.com/profile.php/?id=61551579621493&name=xhp_nt__fb__action__open_user" class="fa fa-facebook" target="_blank"></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/Racca_tar" class="fa fa-twitter"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </footer>
+</html>

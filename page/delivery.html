@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title>ClickFood | Product Delivery</title>
+
+    <link rel="stylesheet" href="../style/navbar.css" />
+    <link rel="stylesheet" href="../style/delivery.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <link rel="icon" href="../image/clickfoodlogo_again.png" sizes="16x16" />
+    <script src="../script/dark-brightmode.js"></script>
+    <script src="../script/usernav.js"></script>
+    <script src="../script/delivery.js"></script>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li><a href="products/products.html">Product</a></li>
+        <li><a href="about.html" class="navactive">About Us</a></li>
+        <div class="specialhoverdiv">
+          <li><a href="cart.html" class="specialhover">🛒</a></li>
+          <li>
+            <button class="specialhover navactive" onclick="userprofile()">
+              👤
+            </button>
+          </li>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="deliveryhead">
+      <h1>Product Delivery</h1>
+    </div>
+
+    <div class="delivery">
+      <h1>Order Details</h1>
+      <p>
+        Your order has been processed and it's on the way to you. Below are the
+        details:
+      </p>
+      <div class="address">
+        <h3>Shipping Address</h3>
+        <p id="name">Christina Chong</p>
+        <p id="address">20, Jalan Kenari,</p>
+      </div>
+      <div class="deliveryStatus">
+        <h3>Delivery Status</h3>
+        <p>
+          Your order is out for delivery. You will receive within 1-2 hours.
+        </p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <p>More Info</p>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="products/products.html">Products</a></li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <p>Get Help</p>
+            <ul>
+              <li><a href="mailto:raccatar@gmail.com">Email</a></li>
+              <li><a href="tel:+60164230745">Telephone</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <p>Follow Us</p>
+            <ul>
+              <li>
+                <a
+                  href="https://www.instagram.com/racca_tar/"
+                  target="_blank"
+                  class="fa fa-instagram"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://m.facebook.com/profile.php/?id=61551579621493&name=xhp_nt__fb__action__open_user"
+                  class="fa fa-facebook"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/Racca_tar"
+                  class="fa fa-twitter"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

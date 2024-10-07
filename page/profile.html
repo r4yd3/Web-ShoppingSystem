@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title>ClickFood | Profile</title>
+    <link rel="stylesheet" href="../style/navbar.css" />
+    <link rel="stylesheet" href="../style/profile.css" />
+    <link rel="icon" href="../image/clickfoodlogo_again.png" sizes="16x16" />
+    <script src="../script/main.js"></script>
+    <script src="../script/dark-brightmode.js"></script>
+    <script src="../script/profile.js"></script>
+    <script src="../script/main.js"></script>
+    <script src="../script/usernav.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="../index.html" class="home">Home</a>
+        </li>
+        <li><a href="products/products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+
+        <div class="specialhoverdiv">
+          <li><a href="cart.html" class="specialhover">🛒</a></li>
+          <li>
+            <button class="specialhover navactive" onclick="userprofile()">
+              👤
+            </button>
+          </li>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div id="profilepic">
+        <h1>Profile</h1>
+
+        <label class="profilelabel" for="file">
+          <span id="change">Change Image</span>
+        </label>
+        <input id="file" type="file" onchange="loadFile(event)" />
+        <img alt="Profile pic" id="output" />
+      </div>
+      <div class="userinfo">
+        <p>User Info</p>
+        <form>
+          <div class="input">
+            <label for="name">Username</label><br />
+            <input type="text" id="name" placeholder="Username" />
+          </div>
+          <div class="input">
+            <label for="email">Email</label><br />
+            <input
+              type="email"
+              id="email"
+              placeholder="abc@example.com"
+            /><br />
+          </div>
+          <div class="input">
+            <label for="birth">Birth</label><br />
+            <input type="date" id="birth" placeholder="Name" />
+          </div>
+        </form>
+      </div>
+      <div class="contactinfo">
+        <p>Contact Information</p>
+        <form>
+          <div class="input">
+            <label>Adress</label><br />
+            <input type="text" id="adress" placeholder="Adress" />
+          </div>
+          <div class="input">
+            <label>Contact Number</label><br />
+            <input type="tel" id="contact" placeholder="Contact" />
+          </div>
+        </form>
+      </div>
+      <div class="submit">
+        <button id="save" onclick="save()">Save</button>
+        <button id="logout" onclick="popup()">Log Out</button>
+      </div>
+    </div>
+    <div class="popup" id="popup">
+      <h1>Log Out?</h1>
+      <div class="row">
+        <button id="yes" class="yes">Yes</button>
+        <button id="no" class="no">No</button>
+      </div>
+    </div>
+    <script src="../script/profile.js"></script>
+  </body>
+</html>

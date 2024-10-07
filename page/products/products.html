@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title>ClickFood | Products</title>
+    <link rel="stylesheet" href="../../style/navbar.css" />
+    <link rel="stylesheet" href="../../style/main.css" />
+    <link rel="stylesheet" href="../../style/productsimg.css" />
+    <link rel="stylesheet" href="../../style/footer.css" />
+    <link rel="icon" href="../../image/clickfoodlogo_again.png" sizes="16x16" />
+   
+    <script src="../../script/dark-brightmode.js"></script>
+    <script src="../../script/usernav.js"></script>
+    <!--Awesome font-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- not sure if teacher will allow that because its not our css-->
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="../../index.html" class="home">Home</a>
+        </li>
+        <li><a href="products.html" class="navactive">Products</a></li>
+        <li><a href="../about.html">About Us</a></li>
+        <div class="specialhoverdiv">
+          <li><a href="../cart.html" class="specialhover">🛒</a></li>
+          <li>
+            <button class="specialhover navactive" onclick="userprofile()">
+              👤
+            </button>
+          </li>
+        </div>
+      </ul>
+    </nav>
+
+    <div id="parallaxbg2" style="height: 38vw">
+      <div class="gridbox">
+        <div class="product1">
+          <a href="beverages.html">
+            <img
+              src="../../image/bevIcon.png"
+              alt="Beverages"
+              class="bevgridimg"
+          /></a>
+          <p id="bevP">Beverages</p>
+        </div>
+
+        <div class="product2">
+          <a href="cookfood.html"
+            ><img
+              src="../../image/cookedIcon.png"
+              alt="Cooked Food Icon"
+              class="cookedgridimg"
+          /></a>
+          <p id="cookP">Cooked Food</p>
+        </div>
+
+        <div class="product3">
+          <a href="vegetable.html"
+            ><img
+              src="../../image/vegIcon.png"
+              alt="Vegetables Icon"
+              class="veggridimg"
+          /></a>
+          <p id="vegP">Vegetables and Fruits</p>
+        </div>
+
+        <div class="product4">
+          <a href="rawmeat.html"
+            ><img
+              src="../../image/rawmeatIcon.png"
+              alt="Rawmeat Icon"
+              class="rawgridimg"
+          /></a>
+          <p id="rawP">Raw Meats</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

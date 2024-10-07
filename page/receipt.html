@@ -1,0 +1,156 @@
+<html>
+  <head>
+    <title>Receipt</title>
+    <link rel="stylesheet" href="../style/receipt.css" />
+    <meta charset="UTF-8" />
+    <link rel="icon" href="../image/clickfoodlogo_again.png" sizes="16x16" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="border-design top">
+        <div class="c1"></div>
+      </div>
+
+      <div class="receipt-header">
+        <div class="logo">Clickfood</div>
+        <br />
+        <div class="title">Receipt</div>
+        <br />
+        <div class="rcp-number">
+          <h3>Receipt #</h3>
+          <h4 id="randomNumber"></h4>
+        </div>
+
+        <div class="rcp-date">
+          <h3>Date</h3>
+          <h4>24/09/2023</h4>
+        </div>
+
+        <div>
+          <table style="width: 500px" id="tableThing">
+            <tr>
+              <th>No.</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Quantity</th>
+            </tr>
+          </table>
+        </div>
+
+        <br />
+
+        <div>
+          <b>Total: </b>
+          <p id="totalPrice" style="display: flex"></p>
+
+          <p align="right">
+            <input
+              type="button"
+              id="myfrm"
+              value="Print"
+              style="padding: 4px; width: 50px"
+            />
+          </p>
+          <script>
+            function printPage() {
+              window.print();
+            }
+            document
+              .getElementById("myfrm")
+              .addEventListener("click", printPage);
+          </script>
+        </div>
+
+        <br />
+
+        <div>
+          Terms & Conditions: <br />
+          Payment is due within 3 days<br /><br />
+          Maybank<br />
+          Account number: 1234-5678-9123-4567
+        </div>
+
+        <div class="border-design bottom">
+          <div class="c1"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const allFood = [
+        "Monster",
+        "Evian",
+        "Drumstick",
+        "Bleu",
+        "Milo",
+        "Coke",
+        "Avocado",
+        "Brocolli",
+        "HeavenEarth",
+        "Cucumber",
+        "Prawn",
+        "Tomato",
+        "Chickenwing",
+        "Nescafe",
+        "Salmon",
+        "HPlus",
+        "Pepsi",
+        "Lemon",
+        "Anmuxi",
+        "Tinge",
+        "Banana",
+        "Grape",
+        "Ladyfinger",
+        "Minmaid",
+        "Steak",
+        "Dragonfruit",
+        "Oldtown",
+        "Chapai",
+        "Apple",
+        "Orange",
+        "Bacon",
+        "Pocari",
+        "Mangosteen",
+        "Cabbage",
+        "Carrot",
+        "Sushi",
+        "Spaghetti",
+        "GrilledChicken",
+        "Quesadillas",
+        "ChickenPie",
+      ];
+      let totalPrice = 0;
+      for (let i = 0, r = 0; i < 39; i++) {
+        let temp = JSON.parse(localStorage.getItem(allFood[i]));
+        try {
+          if (temp.qty != 0) {
+            totalPrice += temp.qty * temp.price;
+            r += 1;
+            let node = document.createElement("tr");
+            let node2 = document.createElement("td");
+            let itemName = document.createElement("td");
+            let itemPrice = document.createElement("td");
+            let itemAmount = document.createElement("td");
+            let itemNameNode = document.createTextNode(temp.name);
+            let itemAmountNode = document.createTextNode(temp.qty);
+            let textNode = document.createTextNode(r);
+            let itemPriceNode = document.createTextNode(temp.price);
+            node2.appendChild(textNode);
+            node.appendChild(node2);
+            itemName.appendChild(itemNameNode);
+            node.appendChild(itemName);
+            itemPrice.appendChild(itemPriceNode);
+            node.appendChild(itemPrice);
+            itemAmount.appendChild(itemAmountNode);
+            node.appendChild(itemAmount);
+            document.getElementById("tableThing").appendChild(node);
+          } else {
+          }
+        } catch (err) {}
+      }
+      document.getElementById("totalPrice").innerHTML = "RM " + totalPrice;
+      document.getElementById("randomNumber").innerHTML =
+        Math.floor(Math.random() * 1001) + 1000;
+    </script>
+  </body>
+</html>
